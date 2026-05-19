@@ -304,3 +304,55 @@ h3 {
     align-items: stretch;
   }
 }
+
+/* Added styles for logo, icons and contact form */
+.logo {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 6px;
+}
+
+.contact-form {
+  margin-top: 12px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--surface-strong);
+}
+
+.contact-form button.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+.link { color: var(--accent); text-decoration: none; }

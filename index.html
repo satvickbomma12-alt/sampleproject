@@ -8,15 +8,18 @@
 </head>
 <body>
   <div class="page-shell">
-    <header class="topbar">
-      <a class="brand" href="index.html">GreenLeaf</a>
-      <nav class="site-nav">
-        <a href="about.html">About</a>
-        <a href="#services">Services</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+      <header class="topbar">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="GreenLeaf" class="logo" />
+          GreenLeaf
+        </a>
+        <nav class="site-nav">
+          <a href="about.html">About</a>
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
     <main>
       <section class="hero panel">
@@ -65,14 +68,17 @@
         <h2>Featured Products</h2>
         <div class="card-list">
           <article class="card">
+            <img src="assets/pill.svg" class="icon" alt="vitamins" />
             <h3>Daily Vitamins</h3>
             <p>High-quality multivitamins selected for everyday wellbeing.</p>
           </article>
           <article class="card">
+            <img src="assets/cold.svg" class="icon" alt="cold" />
             <h3>Cold & Flu Care</h3>
             <p>Trusted OTC remedies and advice to help you recover faster.</p>
           </article>
           <article class="card">
+            <img src="assets/allergy.svg" class="icon" alt="allergy" />
             <h3>Allergy Relief</h3>
             <p>Antihistamines and personalised recommendations for seasonal allergies.</p>
           </article>
@@ -82,14 +88,26 @@
       <section id="contact" class="panel contact-panel">
         <h2>Contact & Location</h2>
         <p class="lead">Visit us at 12 High Street, Greenfield or contact our friendly team for any medication queries.</p>
+        <form class="contact-form" action="mailto:care@greenleafpharmacy.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-row">
+            <input type="text" name="subject" placeholder="Subject" />
+          </div>
+          <div class="form-row">
+            <textarea name="message" rows="5" placeholder="Message"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <a class="btn btn-secondary" href="mailto:care@greenleafpharmacy.com">Or email us</a>
+          </div>
+        </form>
         <div class="contact-grid">
           <div class="summary-card">
             <strong>Phone</strong>
             <p>+1 (555) 123-4567</p>
-          </div>
-          <div class="summary-card">
-            <strong>Email</strong>
-            <p><a class="link" href="mailto:care@greenleafpharmacy.com">care@greenleafpharmacy.com</a></p>
           </div>
           <div class="summary-card">
             <strong>Hours</strong>
